@@ -23,7 +23,7 @@ const TopAuthor = () => {
       }}
       plugins={[
         Autoplay({
-          delay: 3000,
+          delay: 3520,
         }),
       ]}
     >

@@ -19,7 +19,7 @@ const TopPost = () => {
       className="w-full max-w-4xl p-0 mx-auto"
       plugins={[
         Autoplay({
-          delay: 6000,
+          delay: 6135,
         }),
       ]}
       opts={{
