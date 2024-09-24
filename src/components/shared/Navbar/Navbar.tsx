@@ -47,8 +47,8 @@ export function Navbar() {
             <NavigationMenuItem className="cursor-pointer">
               Login
             </NavigationMenuItem>
-            <Button className="rounded-full">Donate</Button>
           </NavigationMenuList>
+          <Button className="ml-6 rounded-full">Donate</Button>
         </NavigationMenu>
       </div>
     </header>

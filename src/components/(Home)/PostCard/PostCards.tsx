@@ -24,7 +24,10 @@ const PostCards = () => {
             <CardHeader>
               <div className="flex items-center gap-2">
                 <Avatar>
-                  <AvatarImage src="https://github.com/shadcn.png" />
+                  <AvatarImage
+                    src="https://github.com/shadcn.png"
+                    alt="User gavater"
+                  />
                   <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
                 <div>
@@ -40,11 +43,21 @@ const PostCards = () => {
                 This is a tile for bloge Lorem, ipsum dolor sit amet consectetur
                 adipisicing elit
               </CardTitle>
+              <CardDescription className="line-clamp-3">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+                animi, sed quia temporibus nisi quam repudiandae soluta quasi
+                distinctio aspernatur iste debitis facere fuga reiciendis
+                reprehenderit commodi nesciunt quod minima tempore placeat.
+                Ullam, totam earum praesentium cupiditate iusto debitis fuga?
+              </CardDescription>
+              <span className="text-xs cursor-pointer text-linkColor hover:text-linkHoverColor">
+                See more
+              </span>
             </CardContent>
             <CardFooter>
               <div className="flex w-full">
-                <div className="flex gap-2 grow">
-                  <p>Just now</p>
+                <div className="flex items-center gap-2 grow">
+                  <p className="text-xs text-muted-foreground">Just now</p>
                   <Heart />
                   <Comment />
                   <SharedSvg />
@@ -63,8 +76,8 @@ const PostCards = () => {
                 "https://images.unsplash.com/photo-1514820402329-de527fdd2e6d?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               }
               alt="Bloge image"
-              width={500}
-              height={500}
+              width={1080}
+              height={718}
               className="w-full h-full rounded-lg"
             />
           </CardHeader>

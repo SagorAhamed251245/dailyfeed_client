@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -6,15 +5,16 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
+} from "../ui/card";
+import { Input } from "../ui/input";
+import { Button } from "../ui/button";
 
-const Banner = () => {
+const SubscribeCard = () => {
   return (
     <Card className="w-full mb-5">
       <CardHeader className="text-center">
-        <CardTitle className="text-3xl">
-          Your Daily Dose of Insights: News, Trends, & Inspiration
+        <CardTitle className="text-2xl">
+          To explore your Knowledge stay with us
         </CardTitle>
         <CardDescription>
           We have the vision to provide the content you desire.
@@ -25,6 +25,7 @@ const Banner = () => {
           <div className="flex flex-col space-y-1.5">
             <Input
               id="name"
+              type="email"
               placeholder="To get updates from notisub please subscribe"
               className="text-center rounded-full"
             />
@@ -38,4 +39,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default SubscribeCard;

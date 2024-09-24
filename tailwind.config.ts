@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        linkColo: "#38bdf8",
+        linkHoverColor: "#0ea5e9",
       },
     },
   },
