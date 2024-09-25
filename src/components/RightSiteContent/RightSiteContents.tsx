@@ -1,6 +1,7 @@
 import RandomAdvice from "./RandomAdvice";
 import RecommendedTopic from "./RecommendedTopic/RecommendedTopic";
 import SubscribeCard from "./SubscribeCard";
+import SuggestedAuthor from "./SuggestedAuthor/SuggestedAuthor";
 
 const RightSiteContents = () => {
   return (
@@ -8,6 +9,7 @@ const RightSiteContents = () => {
       <RandomAdvice />
       <SubscribeCard />
       <RecommendedTopic />
+      <SuggestedAuthor />
     </>
   );
 };
