@@ -1,0 +1,9 @@
+#drop-zone {
+  > div > div {
+    border: 0;
+    justify-content: start !important;
+
+    display: inline-block;
+    width: 300px;
+  }
+}

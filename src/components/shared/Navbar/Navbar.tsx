@@ -8,12 +8,13 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Navbar() {
   return (
     <header
       style={{ gridColumn: "span 24" }}
-      className="sticky top-0  h-14 border shadow bg-white z-[999] "
+      className="sticky top-0  h-14 border shadow bg-white z-[10] "
     >
       {/* Top Navigation Bar */}
       <div className="flex items-center justify-between h-full px-4 mx-auto">
@@ -43,10 +44,11 @@ export function Navbar() {
             <NavigationMenuItem className="cursor-pointer">
               Subscribe
             </NavigationMenuItem>
-
-            <NavigationMenuItem className="cursor-pointer">
-              Login
-            </NavigationMenuItem>
+            <Link href="/dashboard/author/112276">
+              <NavigationMenuItem className="cursor-pointer">
+                Login
+              </NavigationMenuItem>
+            </Link>
           </NavigationMenuList>
           <Button className="ml-6 rounded-full">Donate</Button>
         </NavigationMenu>
